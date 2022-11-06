@@ -10,8 +10,25 @@ namespace ConsoleApp2
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World");
-            Console.ReadLine();
+            string userName = "";
+            int userAge = 0;
+            int currentYear = 0;
+                
+Console.Write("Please enter your name: ");
+            userName = Console.ReadLine();
+            Console.Write("Please enter your age: ");
+            userAge = Convert.ToInt32(Console.ReadLine());
+             Console.Write("Please enter the current year: ");
+            currentYear = Convert.ToInt32(Console.ReadLine());
+            
+        Console.WriteLine("Hello World! My name is {0} and I am {1}years old.I was born in { 2}.", userName, userAge, currentYear);
+        }
+
+        class Staff
+        {
+            private string nameOfStaff;
+            private const int hourlyRate = 30;
+            private int hWorked;
         }
     }
 }

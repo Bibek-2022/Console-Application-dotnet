@@ -14,7 +14,7 @@ namespace ConsoleApp2
             int userAge = 0;
             int currentYear = 0;
                 
-Console.Write("Please enter your name: ");
+            Console.Write("Please enter your name: ");
             userName = Console.ReadLine();
             Console.Write("Please enter your age: ");
             userAge = Convert.ToInt32(Console.ReadLine());
@@ -29,6 +29,32 @@ Console.Write("Please enter your name: ");
             private string nameOfStaff;
             private const int hourlyRate = 30;
             private int hWorked;
+        }
+        public void PrintMessage()
+        {
+            Console.WriteLine("Calculating Pay…");
+        }
+        private int hWorked;
+        public int HoursWorked
+        {
+            get
+            {
+                return hWorked;
+            }
+            set
+            {
+                hWorked = value;
+            }
+        }
+        public int CalculatePay()
+        {
+            PrintMessage();
+            int staffPay;
+            staffPay = hWorked * 20;
+            if (hWorked > 0)
+                return staffPay;
+            else
+                return 0;
         }
     }
 }

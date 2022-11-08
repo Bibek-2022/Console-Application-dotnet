@@ -11,7 +11,7 @@ namespace ConsoleApp2
         static void Main(string[] args)
         {
             Test name = new Test();
-            Console.WriteLine(name.Address);
+            
             string userName = "";
             int userAge = 0;
             int currentYear = 0;
@@ -55,6 +55,14 @@ namespace ConsoleApp2
             staffPay = hWorked * 20;
             if (hWorked > 0)
                 return staffPay;
+            else
+                return 0;
+        }
+        public int CalculatePay(int bonus, int allowance)
+        {
+            PrintMessage();
+            if (hWorked > 0)
+                return hWorked * 30 + bonus + allowance;
             else
                 return 0;
         }

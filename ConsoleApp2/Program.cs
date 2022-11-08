@@ -10,6 +10,8 @@ namespace ConsoleApp2
     {
         static void Main(string[] args)
         {
+            Test name = new Test();
+            Console.WriteLine(name.Address);
             string userName = "";
             int userAge = 0;
             int currentYear = 0;
